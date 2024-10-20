@@ -110,7 +110,7 @@ header {
 
     header {
         padding: 10px;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
     }
 
     .menuLinks ul {
