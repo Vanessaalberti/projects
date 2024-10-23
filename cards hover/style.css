@@ -1,0 +1,117 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+.container {
+    background-color: #1c1a24;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:nowrap;
+
+    transition: all .5s;
+}
+
+.card {
+    height: 80%;
+    overflow: hidden;
+    margin: 15px;
+    border-radius: 15px;
+    
+    flex: 1;
+}
+
+/*
+
+.text {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10%;
+    gap: 10px;
+    color: aliceblue;
+    opacity: 0;
+}
+
+*/
+
+.text {
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    background: linear-gradient(transparent, #1c1c1c 68%);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: all .5s;
+}
+
+.text h1 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    margin-top: 60%;
+    width: 100%;
+    color: aliceblue;
+}
+
+.text p {
+    margin-top: 10px;
+    width: 100%;
+    color: aliceblue;
+}
+
+#card_ironman {
+    background-image: url(img/ironman.jpg);
+    background-position: center;
+    background-size: cover;
+
+    transition: ease-in-out .5s;
+}
+
+
+#card_captainamerica {
+    background-image: url(img/captainamerica.webp);
+    background-size: cover;
+    background-position: top;
+    transition: ease-in-out .5s;
+}
+
+#card_spiderman{
+    background-image: url(img/spiderman.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: ease-in-out .5s;
+}
+
+#card_hawkeye {
+    background-image: url(img/hawkeye.jpeg);
+    background-position: 80%;
+    background-size: cover;
+    transition: ease-in-out .5s;
+}
+
+.card:hover {
+    flex: 3;
+}
+
+.card:hover .text {
+    height: 100%;
+    opacity: 1;
+}
+
