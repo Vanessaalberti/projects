@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    transition: .5s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+
+    
+    padding: 20px;
+}
+
+.texts {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gd, .gn {
+    position: absolute;
+}
+
+.gn {
+    margin-left: -150%;
+    opacity: 0;
+    color: #b2b2b2;
+}
+
+.gd {
+    color: #eec300;
+}
+
+
+label {
+    border-radius: 1000px;
+    background-color: rgb(221, 244, 255);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .05) inset;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    width: 100%; /* Mobile */
+    height: 120px;
+}
+
+input{
+    display: none;
+}
+
+.circulo_boton {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    background-color: azure;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(10%, -50%);
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, .05), -2px -2px 7px rgba(0, 0, 0, .03) inset ;
+    display: flex;
+    align-items: center;
+}
+
+
+svg {
+    width: 80px;
+    position: absolute;
+}
+
+.sol {
+    color: #eec300;
+    margin-top: 0%;
+    padding-left: 18px;
+}
+
+.luna {
+    color: #b2b2b2;
+    margin-top: -200%;
+    opacity: 0;
+    
+    padding-left: 18px;
+}
+
+input[type=checkbox]:checked + .container{
+    background-color: #23252c;
+}
+
+input[type=checkbox]:checked + .container label {
+    background-color: #1a1a1d;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .5) inset;
+}
+
+input[type=checkbox]:checked + .container label .circulo_boton{
+    background-color: #23252c;
+    left: 100%;
+    transform: translate(-110%, -50%);
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, .5), -2px -2px 7px rgba(0, 0, 0, .3) inset ;
+}
+
+input[type=checkbox]:checked + .container label .circulo_boton .sol {
+    margin-top: 200%;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked + .container label .circulo_boton .luna {
+    margin-top: 0;
+    opacity: 1;
+}
+
+input[type=checkbox]:checked + .container .texts .gd {
+    margin-left: 200%;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked + .container .texts .gn {
+    margin-left: 0;
+    opacity: 1;
+}
+
+label:active .circulo_boton {
+    width: 40%;
+}
+
+@media (min-width: 500px){
+    label {
+        width: 20vw;
+    }
+
+    .texts {
+        width: 20%;
+    }
+}
