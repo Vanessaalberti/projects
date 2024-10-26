@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Livvic", serif;
+    color: aliceblue
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins&display=swap');
+
+.base {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #0a1429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_externo {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.75);
+}
+
+.container_interno {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    border: #b42f71 2px solid;
+    background-color: #b42f71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.izquierda{
+    padding: 100px 50px;
+    height: 100%;
+    width: 50%;
+    background-color: #0a1429;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.izquierda h1{
+    color: #b42f71;
+}
+
+.iconos svg {
+    width: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.iconos,
+.info h2{
+    margin-top: 10px;
+}
+
+.conect h2,
+.info h2,
+.hecho_por{ 
+    font-weight: 500;
+}
+
+.hecho_por a{
+    color: #b42f71;
+    text-decoration: none;
+}
+
+form {
+    padding: 100px 50px;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+form button{
+    color: #b42f71;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    height: 40px;
+    cursor: pointer;
+}
+
+form input{
+    height: 10%;
+    width: 80%;
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: top;
+    color: white;
+}
+
+form input::placeholder{
+    color: #0a1429;
+}
+
+#mensaje{
+    height: 30%;
+}
