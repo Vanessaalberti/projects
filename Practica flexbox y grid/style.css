@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+    
+    font-family: "Jura", sans-serif;
+    transition: .3s ease-in-out;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+
+body{
+    color: #512828;
+    background-color: #E7D7C8;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+header{
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid #512828;
+}
+
+.menu{
+    border: 1px solid #512828;
+}
+
+img:hover{
+    filter: drop-shadow(-4px 6px 24px rgb(0,0,0,45%) );
+    transform: scale(1.12) rotate(10deg);
+}
+
+#top{
+    grid-column: span 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    align-items: center;
+}
+
+.texto{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#bottom{
+    grid-column: span 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+    border: 1px solid #512828;
+}
+
+@media (min-width: 444px) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    #top{
+        grid-column: span 2;
+    }
+
+    #bottom{
+        grid-column: span 1;
+    }
+}
+
+@media (min-width: 700px) {
+    main{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    #top{
+        grid-column: span 2;
+    }
+
+    #bottom{
+        grid-column: span 3;
+    }
+}
+
